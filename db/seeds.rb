@@ -3,8 +3,9 @@ User.create!(name: "Example User",
              password:              "foobar",
              password_confirmation: "foobar")
 
-99.times do |n|
-  name  = Faker::Name.name
+99.times do |n| 
+  name = "example-#{n+1}"
+  #binding.pry
   email = "example-#{n+1}@railstutorial.org"
   password = "password"
   User.create!(name:  name,
